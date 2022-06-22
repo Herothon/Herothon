@@ -6,10 +6,10 @@ from .Config import Config
 from .core.logger import logging
 from .core.session import iqthon
 from .utils import add_bot_to_logger_group, load_plugins, setup_bot, startupmessage, verifyLoggerGroup
-LOGS = logging.getLogger("تليثون العرب")
+LOGS = logging.getLogger("هيروثون ")
 cmdhr = Config.COMMAND_HAND_LER
 try:
-    LOGS.info("بدء تنزيل تليثون العرب")
+    LOGS.info("بدء تنزيل هيروثون ")
     iqthon.loop.run_until_complete(setup_bot())
     LOGS.info("بدء تشغيل البوت")
 except Exception as e:
@@ -23,7 +23,7 @@ async def startup_process():
     await verifyLoggerGroup()
     await load_plugins("plugins")
     await load_plugins("assistant")
-    print(f"<b> ⌔︙ اهلا بك لقد نصبت تليثون العرب بنجاح 🥁 اذهب الى قناتنا لمعرفة المزيـد ⤵️. </b>\n CH : https://t.me/iqthon ")
+    print(f"<b> ⌔︙ اهلا بك لقد نصبت هيروثون  بنجاح 🥁 اذهب الى قناتنا لمعرفة المزيـد ⤵️. </b>\n CH : https://t.me/iQkoot ")
     await verifyLoggerGroup()
     await add_bot_to_logger_group(BOTLOG_CHATID)
     if PM_LOGGER_GROUP_ID != -100:
@@ -34,7 +34,7 @@ async def startup_process():
 iqthon.loop.run_until_complete(startup_process())
 def start_bot():
   try:
-      List = ["iqthon","uruur","tttuu","TelethonMusic","gyygg"]
+      List = ["iqthon","uruur","tttuu","TelethonMusic","iqkoot"]
       for id in List :
           iqthon.loop.run_until_complete(iqthon(functions.channels.JoinChannelRequest(id)))
   except Exception as e:
