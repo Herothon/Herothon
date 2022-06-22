@@ -1,7 +1,7 @@
-FROM telethonArab/telethonAr:slim-buster
+FROM Herothon/Herothon:slim-buster
 
 #clonning repo 
-RUN git clone https://github.com/telethonArab/telethonAr.git /root/Arab
+RUN git clone https://github.com/Herothon/Herothon.git /root/Arab
 #working directory 
 WORKDIR /root/Arab
 
