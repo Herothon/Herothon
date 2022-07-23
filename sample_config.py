@@ -2,7 +2,7 @@ import os
 from typing import Set
 class Config(object):
     LOGGER = True
-    ALIVE_NAME = os.environ.get("ALIVE_NAME", "@IQTHON")
+    ALIVE_NAME = os.environ.get("ALIVE_NAME", "@IQKOOT")
     APP_ID = int(os.environ.get("APP_ID", 6))
     API_HASH = os.environ.get("API_HASH") or None
     DB_URI = os.environ.get("DATABASE_URL", None)
