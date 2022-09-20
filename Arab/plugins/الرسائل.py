@@ -918,7 +918,7 @@ async def iq(event):
     return await event.edit('**يجـب عـليك الـرد عـلى صـورة ذاتيـة الـتدمير**')
   ogtah = await event.get_reply_message()
   pic = await ogtah.download_media()
-  await bot.send_file('me', pic, caption=f"""**الصـورة الوقتيه ✅**\- So : @iqthon""")
+  await bot.send_file('me', pic, caption=f"""**الصـورة الوقتيه ✅**\- So : @IQKOOT""")
   await event.delete()
 @iqthon.on(admin_cmd(pattern="تاريخ الرساله(?: |$)(.*)"))    
 async def _(event):
