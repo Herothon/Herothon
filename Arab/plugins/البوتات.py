@@ -64,7 +64,7 @@ async def iq(iqthon):
     l5 = await bot.inline_query(donttag, kkno)
     await l5[0].click(iqthon.chat_id)
     await iqthon.delete()
-@iqthon.on(admin_cmd(pattern="حالتي ?(.*)"))
+@iqthon.on(admin_cmd(pattern="حاله ?(.*)"))
 async def iq(iqthon):
     await iqthon.edit("جاري الفحص")
     async with bot.conversation("@SpamBot") as l5:
@@ -121,7 +121,7 @@ async def _(iqthon):
 @iqthon.on(admin_cmd(pattern="بوتي$"))
 async def iq(iqbot):
     TG_BOT_USERNAME = Config.TG_BOT_USERNAME
-    await iqbot.reply(f"**بوت تليثون الخاص بك : {TG_BOT_USERNAME}**")
+    await iqbot.reply(f"**بوت هيروثون الخاص بك : {TG_BOT_USERNAME}**")
 @iqthon.on(admin_cmd(pattern="ملصقي ?(.*)"))
 async def iq(iqthon):
     if iqthon.fwd_from:
@@ -261,7 +261,7 @@ async def _(iqthon):
         else:
             await iqevent.delete()
             await iqthon.client.send_message(iqthon.chat_id, response.message)
-@iqthon.on(admin_cmd(pattern="زخرفه_عربي ?(.*)"))
+@iqthon.on(admin_cmd(pattern="زخرف ?(.*)"))
 async def _(event):
     input_str = event.pattern_match.group(1)
     reply_to_id = await reply_id(event)
@@ -285,7 +285,7 @@ async def _(event):
         else:
             await catevent.delete()
             await event.client.send_message(event.chat_id, response.message)
-@iqthon.on(admin_cmd(pattern="زخرفه_انكليزي ?(.*)"))
+@iqthon.on(admin_cmd(pattern="زخرفه ?(.*)"))
 async def _(event):
     input_str = event.pattern_match.group(1)
     reply_to_id = await reply_id(event)
