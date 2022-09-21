@@ -125,10 +125,10 @@ fahs = """♛ : me  {my_mention}  𓇡.
 ♛ : My Bot  {tg_bot}  𓇡.
 ♛ : ping  {ping}  𓇡.
 ♛ : version 7.6  𓇡.
-♛ : Source Herothon : @iQkoot   𓇡."""
+♛ : Source Herothon : @IQKOOT   𓇡."""
 @iqthon.on(admin_cmd(pattern="رابط التنصيب(?: |$)(.*)"))    
 async def source(e):
-    await edit_or_reply(e, "https://github.com/TelethonArab/TelethonAr",)
+    await edit_or_reply(e, "https://github.com/Herothon/help",)
 @iqthon.on(admin_cmd(pattern="حساب كيثاب( -l(\d+))? ([\s\S]*)"))    
 async def _(event):
     reply_to = await reply_id(event)
@@ -188,7 +188,7 @@ async def amireallyalive(event):
     uptime = await get_readable_time((time.time() - StartTime))
     _, check_sgnirts = check_data_base_heal_th()
     EMOJI_TELETHON = gvarstatus("ALIVE_EMOJI") or " ٍَ 🖤"
-    IQTHON_ALIVE_TEXT = "❬ تـليثون العـرب - Telethon-Arabe ، 🕸  ❭ :"
+    IQTHON_ALIVE_TEXT = "❬ هيروثون العـرب - herothon-Arabe ، 🕸  ❭ :"
     IQTHON_IMG = gvarstatus("ALIVE_PIC")
     if IQTHON_IMG:
         CAT = [x for x in IQTHON_IMG.split()]
@@ -206,7 +206,7 @@ async def amireallyalive(event):
 async def _(event):
     cmd = "env"
     o = (await _catutils.runcmd(cmd))[0]
-    OUTPUT = (f"♛︙  وحـدة المعلومات الخاصه بتنصيبك مع جميع الفارات  لتنصيب سورس هيرثون  @iQkoot  :**\n\n{o}")
+    OUTPUT = (f"♛︙  وحـدة المعلومات الخاصه بتنصيبك مع جميع الفارات  لتنصيب سورس هيروثون  @IQKOOT  :**\n\n{o}")
     await edit_or_reply(event, OUTPUT)
 
 if Config.PLUGIN_CHANNEL:
@@ -259,7 +259,7 @@ async def _(event):
     await asyncio.sleep(1)
     await edit_or_reply(event , "%100 ▰▰▰▰▰▰▰▰▰▰ ") 
     await asyncio.sleep(1)
-    await edit_or_reply(event , "حسنا جاري تحديث هيرثون  انتضر من 5 الى 10 دقائق")
+    await edit_or_reply(event , "حسنا جاري تحديث هيروثون  انتضر من 5 الى 10 دقائق")
     try:
         ulist = get_collectionlist_items()
         for i in ulist:
@@ -285,25 +285,24 @@ https://t.me/iQkoot /36
   • لتغير صوره او فيديو امر الفحص اضغط هنا ↶
 https://t.me/iQkoot /39
   • لتغير كليشة امر حماية الخاص اضغط هنا ↶
-https://t.me/iQkoot /35
+https://t.me/iQhaay/8
   • لوضع صوره او فيديو حماية الخاص اضغط هنا ↶
-https://t.me/iQkoot /38
+https://t.me/iQhaay/11
   • لتغير عدد تحذيرات حماية الخاص اضغط هنا ↶
-https://t.me/iQkoot /45
+https://t.me/iQhaay/13
   • لتغير نبذه الوقتيه اضغط هنا ↶
-https://t.me/iQkoot /54
+https://t.me/iQhaay/17
   • لتغير صوره وقتيه اضغط هنا ↶
- https://t.me/iQkoot /46 
+ https://t.me/iQhaay/14
   • لتغير خط زخرفه اسم وقتي اضغط هنا ↶
- https://t.me/iQkoot /59
+https://t.me/iQhaay/18
   •  لوضع ايموجي بجانب اسم وقتي اضغط هنا ↶
- https://t.me/iQkoot /37
+ https://t.me/iQhaay/10
 • لتغير امر من الاوامر اضغط هنا ↶
 https://t.me/iQkoot /4718
 • لكيفيه حذف الفار اضغط هنا ↶
-https://t.me/iQkoot /51
-
-قناة الكلايش  : @FGFFG
+https://t.me/iQhaay/2
+قناة الكلايش  : @IQKOOT
 قناه شروحات الاوامر  : @iQ828 
 قناه المتغيرات او الفارات : @iQkoot """)
 @iqthon.on(admin_cmd(pattern="اطفاء مؤقت( [0-9]+)?$"))    
@@ -319,7 +318,7 @@ async def _(event):
 @iqthon.on(admin_cmd(pattern="تاريخ التنصيب$"))
 async def psu(event):
     uname = platform.uname()
-    softw = "**تاريخ تنصيب **\n ** بوت هيرثون  لديك :**"
+    softw = "**تاريخ تنصيب **\n ** بوت هيروثون  لديك :**"
     boot_time_timestamp = psutil.boot_time()
     bt = datetime.fromtimestamp(boot_time_timestamp)
     softw += f"` {bt.year}/{bt.month}/{bt.day} `"
@@ -346,7 +345,7 @@ async def bad(event):
             vname = oldvars[vname]
         if cmd == "اضف":
             if not vinfo and vname == "ALIVE_TEMPLATE":
-                return await edit_delete(event, f"**♛︙  📑 يرجى متابع قناه الفارات تجدها هنا : @iQkoot ")
+                return await edit_delete(event, f"**♛︙  📑 يرجى متابع قناه الفارات تجدها هنا : @iQhaay ")
             if not vinfo and vname == "PING_IQ":
                 return await edit_delete(event, f"**♛︙ قم بكتابة الامـر بـشكل صحـيح  :  .اضف فار PING_TEXT النص الخاص بك**")
             if not vinfo:
@@ -412,9 +411,9 @@ async def variable(var):
             return await ics.edit("⌔ .set var `<ConfigVars-name> <value>`")
         await asyncio.sleep(1.5)
         if variable in heroku_var:
-            await ics.edit("**⌔ تم تغيـر** `{}` **:**\n **- المتغير :** `{}` \n**- يتم الان اعـادة تشغيـل بـوت تليثـون يستغـرق الامر 2-1 دقيقـه ▬▭ ...**".format(variable, value))
+            await ics.edit("**⌔ تم تغيـر** `{}` **:**\n **- المتغير :** `{}` \n**- يتم الان اعـادة تشغيـل بـوت هيروثـون يستغـرق الامر 2-1 دقيقـه ▬▭ ...**".format(variable, value))
         else:
-            await ics.edit("**⌔ تم اضافه** `{}` **:** \n**- المضاف اليه :** `{}` \n**يتم الان اعـادة تشغيـل بـوت تليثـون يستغـرق الامر 2-1 دقيقـه ▬▭ ...**".format(variable, value))
+            await ics.edit("**⌔ تم اضافه** `{}` **:** \n**- المضاف اليه :** `{}` \n**يتم الان اعـادة تشغيـل بـوت هيروثـون يستغـرق الامر 2-1 دقيقـه ▬▭ ...**".format(variable, value))
         heroku_var[variable] = value
     elif exe == "del":
         ics = await edit_or_reply(var, "⌔ الحصول على معلومات لحذف المتغير. ")
@@ -426,7 +425,7 @@ async def variable(var):
         if variable not in heroku_var:
             return await ics.edit(f"⌔ `{variable}`**  غير موجود**")
 
-        await ics.edit(f"**⌔** `{variable}`  **تم حذفه بنجاح. \n**يتم الان اعـادة تشغيـل بـوت تليثـون يستغـرق الامر 2-1 دقيقـه ▬▭ ...**")
+        await ics.edit(f"**⌔** `{variable}`  **تم حذفه بنجاح. \n**يتم الان اعـادة تشغيـل بـوت هيروثـون يستغـرق الامر 2-1 دقيقـه ▬▭ ...**")
         del heroku_var[variable]
 @iqthon.tgbot.on(CallbackQuery(data=re.compile(rb"order1")))
 @check_owner
@@ -665,7 +664,7 @@ async def inlineiqthon(iqthon):
 async def iq(event):
     await edit_or_reply(event, 
 """ **
-❨ Order telethon Arab  ❩
+❨ Order herothon Arab  ❩
 ———————×———————
 ♛  اوامر السورس ↢ ( .م1 )
 ♛  اوامر الحساب ↢ ( .م2 )
