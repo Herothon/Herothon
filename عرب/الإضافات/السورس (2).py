@@ -125,7 +125,7 @@ fahs = """♛ : me  {my_mention}  𓇡.
 ♛ : My Bot  {tg_bot}  𓇡.
 ♛ : ping  {ping}  𓇡.
 ♛ : version 7.6  𓇡.
-♛ : Source TelethonArab : @iqthon  𓇡."""
+♛ : Source herothonArab : @iqkoot  𓇡."""
 @iqthon.on(admin_cmd(pattern="رابط التنصيب(?: |$)(.*)"))    
 async def source(e):
     await edit_or_reply(e, "https://github.com/TelethonArab/TelethonAr",)
@@ -259,7 +259,7 @@ async def _(event):
     await asyncio.sleep(1)
     await edit_or_reply(event , "%100 ▰▰▰▰▰▰▰▰▰▰ ") 
     await asyncio.sleep(1)
-    await edit_or_reply(event , "حسنا جاري تحديث تليثون العرب انتضر من 5 الى 10 دقائق")
+    await edit_or_reply(event , "حسنا جاري تحديث هيروثون العرب انتضر من 5 الى 10 دقائق")
     try:
         ulist = get_collectionlist_items()
         for i in ulist:
@@ -303,9 +303,9 @@ https://t.me/L3LL3/4718
 • لكيفيه حذف الفار اضغط هنا ↶
 https://t.me/Teamtelethon/51
 
-قناة الكلايش  : @FGFFG
-قناه شروحات الاوامر  : @L3LL3
-قناه المتغيرات او الفارات : @teamtelethon""")
+قناة الكلايش  : @iqkoot
+قناه شروحات الاوامر  : @iqkoot
+قناه المتغيرات او الفارات : @iqkoot""")
 @iqthon.on(admin_cmd(pattern="اطفاء مؤقت( [0-9]+)?$"))    
 async def _(event):
     if " " not in event.pattern_match.group(1):
